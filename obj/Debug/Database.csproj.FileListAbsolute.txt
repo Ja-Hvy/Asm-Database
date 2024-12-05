@@ -1,0 +1,17 @@
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\bin\Debug\Database.exe.config
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\bin\Debug\Database.exe
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\bin\Debug\Database.pdb
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.csproj.AssemblyReference.cache
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmDashBoard.resources
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmLogin.resources
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.Properties.Resources.resources
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.csproj.GenerateResource.cache
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.csproj.CoreCompileInputs.cache
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.exe
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.pdb
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmCustomer.resources
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmProduct.resources
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmEmployee.resources
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.Report.resources
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmBill.resources
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmBillProduct.resources
