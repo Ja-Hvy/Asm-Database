@@ -70,7 +70,7 @@
             this.dgvEmployee.Name = "dgvEmployee";
             this.dgvEmployee.RowHeadersWidth = 51;
             this.dgvEmployee.RowTemplate.Height = 24;
-            this.dgvEmployee.Size = new System.Drawing.Size(1037, 296);
+            this.dgvEmployee.Size = new System.Drawing.Size(1364, 296);
             this.dgvEmployee.TabIndex = 0;
             this.dgvEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellClick);
             this.dgvEmployee.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvEmployee_KeyDown);
@@ -121,12 +121,12 @@
             // 
             this.txtSearch.Location = new System.Drawing.Point(12, 12);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(908, 27);
+            this.txtSearch.Size = new System.Drawing.Size(1253, 27);
             this.txtSearch.TabIndex = 1;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(944, 12);
+            this.btnSearch.Location = new System.Drawing.Point(1271, 12);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(105, 27);
             this.btnSearch.TabIndex = 2;
@@ -136,21 +136,21 @@
             // 
             // txtEmployeeID
             // 
-            this.txtEmployeeID.Location = new System.Drawing.Point(104, 394);
+            this.txtEmployeeID.Location = new System.Drawing.Point(227, 394);
             this.txtEmployeeID.Name = "txtEmployeeID";
             this.txtEmployeeID.Size = new System.Drawing.Size(341, 27);
             this.txtEmployeeID.TabIndex = 3;
             // 
             // txtEmployeeName
             // 
-            this.txtEmployeeName.Location = new System.Drawing.Point(104, 471);
+            this.txtEmployeeName.Location = new System.Drawing.Point(227, 471);
             this.txtEmployeeName.Name = "txtEmployeeName";
             this.txtEmployeeName.Size = new System.Drawing.Size(341, 27);
             this.txtEmployeeName.TabIndex = 3;
             // 
             // txtPosition
             // 
-            this.txtPosition.Location = new System.Drawing.Point(611, 394);
+            this.txtPosition.Location = new System.Drawing.Point(837, 394);
             this.txtPosition.Name = "txtPosition";
             this.txtPosition.Size = new System.Drawing.Size(341, 27);
             this.txtPosition.TabIndex = 3;
@@ -158,7 +158,7 @@
             // lblEmployeeID
             // 
             this.lblEmployeeID.AutoSize = true;
-            this.lblEmployeeID.Location = new System.Drawing.Point(100, 371);
+            this.lblEmployeeID.Location = new System.Drawing.Point(223, 371);
             this.lblEmployeeID.Name = "lblEmployeeID";
             this.lblEmployeeID.Size = new System.Drawing.Size(104, 20);
             this.lblEmployeeID.TabIndex = 4;
@@ -167,7 +167,7 @@
             // lblEmployeeName
             // 
             this.lblEmployeeName.AutoSize = true;
-            this.lblEmployeeName.Location = new System.Drawing.Point(100, 448);
+            this.lblEmployeeName.Location = new System.Drawing.Point(223, 448);
             this.lblEmployeeName.Name = "lblEmployeeName";
             this.lblEmployeeName.Size = new System.Drawing.Size(131, 20);
             this.lblEmployeeName.TabIndex = 4;
@@ -176,7 +176,7 @@
             // lblPosition
             // 
             this.lblPosition.AutoSize = true;
-            this.lblPosition.Location = new System.Drawing.Point(607, 371);
+            this.lblPosition.Location = new System.Drawing.Point(833, 371);
             this.lblPosition.Name = "lblPosition";
             this.lblPosition.Size = new System.Drawing.Size(69, 20);
             this.lblPosition.TabIndex = 4;
@@ -185,7 +185,7 @@
             // lblAuthority
             // 
             this.lblAuthority.AutoSize = true;
-            this.lblAuthority.Location = new System.Drawing.Point(607, 448);
+            this.lblAuthority.Location = new System.Drawing.Point(833, 448);
             this.lblAuthority.Name = "lblAuthority";
             this.lblAuthority.Size = new System.Drawing.Size(75, 20);
             this.lblAuthority.TabIndex = 4;
@@ -193,7 +193,7 @@
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(350, 598);
+            this.btnInsert.Location = new System.Drawing.Point(493, 598);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 32);
             this.btnInsert.TabIndex = 5;
@@ -203,7 +203,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(480, 598);
+            this.btnUpdate.Location = new System.Drawing.Point(666, 598);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 32);
             this.btnUpdate.TabIndex = 5;
@@ -213,7 +213,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(632, 598);
+            this.btnClear.Location = new System.Drawing.Point(837, 598);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 32);
             this.btnClear.TabIndex = 5;
@@ -224,7 +224,7 @@
             // lblUserName
             // 
             this.lblUserName.AutoSize = true;
-            this.lblUserName.Location = new System.Drawing.Point(100, 531);
+            this.lblUserName.Location = new System.Drawing.Point(223, 531);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(94, 20);
             this.lblUserName.TabIndex = 6;
@@ -232,7 +232,7 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(104, 554);
+            this.txtUserName.Location = new System.Drawing.Point(227, 554);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(341, 27);
             this.txtUserName.TabIndex = 3;
@@ -240,7 +240,7 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(607, 531);
+            this.lblPassword.Location = new System.Drawing.Point(833, 531);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(83, 20);
             this.lblPassword.TabIndex = 6;
@@ -248,7 +248,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(611, 554);
+            this.txtPassword.Location = new System.Drawing.Point(837, 554);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(341, 27);
             this.txtPassword.TabIndex = 3;
@@ -262,7 +262,7 @@
             "Warehouse",
             "Sales",
             "Admin"});
-            this.cboAuthority.Location = new System.Drawing.Point(611, 471);
+            this.cboAuthority.Location = new System.Drawing.Point(837, 471);
             this.cboAuthority.Name = "cboAuthority";
             this.cboAuthority.Size = new System.Drawing.Size(341, 28);
             this.cboAuthority.TabIndex = 7;
@@ -271,7 +271,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1066, 680);
+            this.ClientSize = new System.Drawing.Size(1388, 680);
             this.Controls.Add(this.cboAuthority);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUserName);

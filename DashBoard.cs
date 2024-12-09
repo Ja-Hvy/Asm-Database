@@ -49,10 +49,9 @@ namespace Database
             OpenForm(new frmEmployee(), sender);
         }
 
-        private void btnAddBill_Click(object sender, EventArgs e)
+        private void btnShowBill_Click(object sender, EventArgs e)
         {
-            OpenForm(new frmBill(user), sender);
+            OpenForm(new frmShowBill(user), sender);
         }
-
     }
 }

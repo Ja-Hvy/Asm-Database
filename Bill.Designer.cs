@@ -29,10 +29,16 @@
         private void InitializeComponent()
         {
             this.dgvBill = new System.Windows.Forms.DataGridView();
+            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ToatlAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbCustomer = new System.Windows.Forms.GroupBox();
             this.cboSelectCustomer = new System.Windows.Forms.ComboBox();
             this.lblSelectCustomer = new System.Windows.Forms.Label();
             this.gbInvoiceDetails = new System.Windows.Forms.GroupBox();
+            this.dtmInvoice = new System.Windows.Forms.DateTimePicker();
             this.txtCreatedBy = new System.Windows.Forms.TextBox();
             this.txtInvoiceCode = new System.Windows.Forms.TextBox();
             this.lblCreatedBy = new System.Windows.Forms.Label();
@@ -42,14 +48,8 @@
             this.txtTotalAmount = new System.Windows.Forms.TextBox();
             this.lblTotalAmount = new System.Windows.Forms.Label();
             this.btnSaveInvoice = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.btnAddProduct = new System.Windows.Forms.Button();
-            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ToatlAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtmInvoice = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBill)).BeginInit();
             this.gbCustomer.SuspendLayout();
             this.gbInvoiceDetails.SuspendLayout();
@@ -58,6 +58,7 @@
             // 
             // dgvBill
             // 
+            this.dgvBill.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductID,
@@ -69,16 +70,52 @@
             this.dgvBill.Name = "dgvBill";
             this.dgvBill.RowHeadersWidth = 51;
             this.dgvBill.RowTemplate.Height = 24;
-            this.dgvBill.Size = new System.Drawing.Size(1037, 318);
+            this.dgvBill.Size = new System.Drawing.Size(1364, 318);
             this.dgvBill.TabIndex = 0;
+            // 
+            // ProductID
+            // 
+            this.ProductID.DataPropertyName = "ProductCode";
+            this.ProductID.HeaderText = "ProductID";
+            this.ProductID.MinimumWidth = 6;
+            this.ProductID.Name = "ProductID";
+            this.ProductID.Visible = false;
+            // 
+            // ProductName
+            // 
+            this.ProductName.DataPropertyName = "ProductName";
+            this.ProductName.HeaderText = "Product Name";
+            this.ProductName.MinimumWidth = 6;
+            this.ProductName.Name = "ProductName";
+            // 
+            // Quantity
+            // 
+            this.Quantity.DataPropertyName = "InventoryQuantity";
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.MinimumWidth = 6;
+            this.Quantity.Name = "Quantity";
+            // 
+            // Price
+            // 
+            this.Price.DataPropertyName = "SellingPrice";
+            this.Price.HeaderText = "Price";
+            this.Price.MinimumWidth = 6;
+            this.Price.Name = "Price";
+            // 
+            // ToatlAmount
+            // 
+            this.ToatlAmount.DataPropertyName = "TotalAmount";
+            this.ToatlAmount.HeaderText = "Total Amount";
+            this.ToatlAmount.MinimumWidth = 6;
+            this.ToatlAmount.Name = "ToatlAmount";
             // 
             // gbCustomer
             // 
             this.gbCustomer.Controls.Add(this.cboSelectCustomer);
             this.gbCustomer.Controls.Add(this.lblSelectCustomer);
-            this.gbCustomer.Location = new System.Drawing.Point(12, 369);
+            this.gbCustomer.Location = new System.Drawing.Point(136, 369);
             this.gbCustomer.Name = "gbCustomer";
-            this.gbCustomer.Size = new System.Drawing.Size(279, 118);
+            this.gbCustomer.Size = new System.Drawing.Size(454, 118);
             this.gbCustomer.TabIndex = 1;
             this.gbCustomer.TabStop = false;
             this.gbCustomer.Text = "Customer ";
@@ -88,7 +125,7 @@
             this.cboSelectCustomer.FormattingEnabled = true;
             this.cboSelectCustomer.Location = new System.Drawing.Point(10, 70);
             this.cboSelectCustomer.Name = "cboSelectCustomer";
-            this.cboSelectCustomer.Size = new System.Drawing.Size(263, 28);
+            this.cboSelectCustomer.Size = new System.Drawing.Size(438, 28);
             this.cboSelectCustomer.TabIndex = 1;
             // 
             // lblSelectCustomer
@@ -108,18 +145,25 @@
             this.gbInvoiceDetails.Controls.Add(this.lblCreatedBy);
             this.gbInvoiceDetails.Controls.Add(this.lblDateCreated);
             this.gbInvoiceDetails.Controls.Add(this.lblInvoiceCode);
-            this.gbInvoiceDetails.Location = new System.Drawing.Point(312, 369);
+            this.gbInvoiceDetails.Location = new System.Drawing.Point(611, 369);
             this.gbInvoiceDetails.Name = "gbInvoiceDetails";
-            this.gbInvoiceDetails.Size = new System.Drawing.Size(279, 254);
+            this.gbInvoiceDetails.Size = new System.Drawing.Size(458, 254);
             this.gbInvoiceDetails.TabIndex = 2;
             this.gbInvoiceDetails.TabStop = false;
             this.gbInvoiceDetails.Text = "Invoice Details";
+            // 
+            // dtmInvoice
+            // 
+            this.dtmInvoice.Location = new System.Drawing.Point(10, 127);
+            this.dtmInvoice.Name = "dtmInvoice";
+            this.dtmInvoice.Size = new System.Drawing.Size(438, 27);
+            this.dtmInvoice.TabIndex = 3;
             // 
             // txtCreatedBy
             // 
             this.txtCreatedBy.Location = new System.Drawing.Point(10, 195);
             this.txtCreatedBy.Name = "txtCreatedBy";
-            this.txtCreatedBy.Size = new System.Drawing.Size(263, 27);
+            this.txtCreatedBy.Size = new System.Drawing.Size(438, 27);
             this.txtCreatedBy.TabIndex = 2;
             // 
             // txtInvoiceCode
@@ -128,7 +172,7 @@
             this.txtInvoiceCode.Location = new System.Drawing.Point(10, 59);
             this.txtInvoiceCode.Name = "txtInvoiceCode";
             this.txtInvoiceCode.ReadOnly = true;
-            this.txtInvoiceCode.Size = new System.Drawing.Size(263, 27);
+            this.txtInvoiceCode.Size = new System.Drawing.Size(438, 27);
             this.txtInvoiceCode.TabIndex = 2;
             this.txtInvoiceCode.Text = "Automatic ID";
             // 
@@ -163,9 +207,9 @@
             // 
             this.gbTotal.Controls.Add(this.txtTotalAmount);
             this.gbTotal.Controls.Add(this.lblTotalAmount);
-            this.gbTotal.Location = new System.Drawing.Point(12, 505);
+            this.gbTotal.Location = new System.Drawing.Point(136, 505);
             this.gbTotal.Name = "gbTotal";
-            this.gbTotal.Size = new System.Drawing.Size(279, 118);
+            this.gbTotal.Size = new System.Drawing.Size(454, 118);
             this.gbTotal.TabIndex = 3;
             this.gbTotal.TabStop = false;
             this.gbTotal.Text = "Total";
@@ -174,7 +218,7 @@
             // 
             this.txtTotalAmount.Location = new System.Drawing.Point(11, 59);
             this.txtTotalAmount.Name = "txtTotalAmount";
-            this.txtTotalAmount.Size = new System.Drawing.Size(262, 27);
+            this.txtTotalAmount.Size = new System.Drawing.Size(437, 27);
             this.txtTotalAmount.TabIndex = 3;
             // 
             // lblTotalAmount
@@ -188,26 +232,27 @@
             // 
             // btnSaveInvoice
             // 
-            this.btnSaveInvoice.Location = new System.Drawing.Point(639, 485);
+            this.btnSaveInvoice.Location = new System.Drawing.Point(1154, 485);
             this.btnSaveInvoice.Name = "btnSaveInvoice";
             this.btnSaveInvoice.Size = new System.Drawing.Size(136, 38);
             this.btnSaveInvoice.TabIndex = 4;
-            this.btnSaveInvoice.Text = "Save Invoice";
+            this.btnSaveInvoice.Text = "Add Invoice";
             this.btnSaveInvoice.UseVisualStyleBackColor = true;
             this.btnSaveInvoice.Click += new System.EventHandler(this.btnSaveInvoice_Click);
             // 
-            // btnCancel
+            // btnClear
             // 
-            this.btnCancel.Location = new System.Drawing.Point(639, 553);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(136, 38);
-            this.btnCancel.TabIndex = 4;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnClear.Location = new System.Drawing.Point(1154, 553);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(136, 38);
+            this.btnClear.TabIndex = 4;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnAddProduct
             // 
-            this.btnAddProduct.Location = new System.Drawing.Point(639, 417);
+            this.btnAddProduct.Location = new System.Drawing.Point(1154, 417);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(136, 38);
             this.btnAddProduct.TabIndex = 5;
@@ -215,61 +260,13 @@
             this.btnAddProduct.UseVisualStyleBackColor = true;
             this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
-            // ProductID
-            // 
-            this.ProductID.DataPropertyName = "ProductCode";
-            this.ProductID.HeaderText = "ProductID";
-            this.ProductID.MinimumWidth = 6;
-            this.ProductID.Name = "ProductID";
-            this.ProductID.Visible = false;
-            this.ProductID.Width = 125;
-            // 
-            // ProductName
-            // 
-            this.ProductName.DataPropertyName = "ProductName";
-            this.ProductName.HeaderText = "Product Name";
-            this.ProductName.MinimumWidth = 6;
-            this.ProductName.Name = "ProductName";
-            this.ProductName.Width = 250;
-            // 
-            // Quantity
-            // 
-            this.Quantity.DataPropertyName = "InventoryQuantity";
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.MinimumWidth = 6;
-            this.Quantity.Name = "Quantity";
-            this.Quantity.Width = 250;
-            // 
-            // Price
-            // 
-            this.Price.DataPropertyName = "SellingPrice";
-            this.Price.HeaderText = "Price";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
-            this.Price.Width = 240;
-            // 
-            // ToatlAmount
-            // 
-            this.ToatlAmount.DataPropertyName = "TotalAmount";
-            this.ToatlAmount.HeaderText = "Total Amount";
-            this.ToatlAmount.MinimumWidth = 6;
-            this.ToatlAmount.Name = "ToatlAmount";
-            this.ToatlAmount.Width = 243;
-            // 
-            // dtmInvoice
-            // 
-            this.dtmInvoice.Location = new System.Drawing.Point(10, 127);
-            this.dtmInvoice.Name = "dtmInvoice";
-            this.dtmInvoice.Size = new System.Drawing.Size(263, 27);
-            this.dtmInvoice.TabIndex = 3;
-            // 
             // frmBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1066, 680);
+            this.ClientSize = new System.Drawing.Size(1388, 680);
             this.Controls.Add(this.btnAddProduct);
-            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.gbCustomer);
             this.Controls.Add(this.btnSaveInvoice);
             this.Controls.Add(this.gbTotal);
@@ -298,7 +295,7 @@
         private System.Windows.Forms.GroupBox gbInvoiceDetails;
         private System.Windows.Forms.GroupBox gbTotal;
         private System.Windows.Forms.Button btnSaveInvoice;
-        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnAddProduct;
         private System.Windows.Forms.ComboBox cboSelectCustomer;
         private System.Windows.Forms.Label lblSelectCustomer;

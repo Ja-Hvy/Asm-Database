@@ -12,6 +12,6 @@ C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.p
 C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmCustomer.resources
 C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmProduct.resources
 C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmEmployee.resources
-C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.Report.resources
 C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmBill.resources
 C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmBillProduct.resources
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmShowBill.resources

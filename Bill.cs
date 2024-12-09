@@ -86,7 +86,6 @@ namespace Database
 
         private void InsertInvoice()
         {
-
             string queryPur = "INSERT INTO Purchase OUTPUT INSERTED.PurchaseCode VALUES (@CusID, @PurDate)";
             connection.Open();
             SqlCommand cmd1 = new SqlCommand(queryPur, connection);
@@ -102,17 +101,19 @@ namespace Database
 
             string queryDetails = "INSERT INTO PurchaseDetails VALUES(@PurID, @EmpID, @ProID, @Quantity)";
             SqlCommand cmd2 = new SqlCommand(queryDetails, connection);
+            int check = 0;
             foreach(var product in addProducts)
             {
                 if (product != null)
                 {
+                    cmd2.Parameters.Clear();
                     cmd2.Parameters.Add("@PurID", SqlDbType.Int).Value = purID;
                     cmd2.Parameters.Add("@EmpID", SqlDbType.Int).Value = user.Id;
                     cmd2.Parameters.Add("@ProID", SqlDbType.Int).Value = product.ProductID;
                     cmd2.Parameters.Add("@Quantity", SqlDbType.Int).Value = product.Quantity;
+                    check = cmd2.ExecuteNonQuery();
                 }
             }
-            int check = cmd2.ExecuteNonQuery();
             if(check > 0) 
             {
                 MessageBox.Show("Successful", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -149,6 +150,11 @@ namespace Database
 
             InsertInvoice();
 
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtTotalAmount.Text = string.Empty;
         }
     }
 }

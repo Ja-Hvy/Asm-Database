@@ -62,7 +62,7 @@
             this.dgvCustomer.Name = "dgvCustomer";
             this.dgvCustomer.RowHeadersWidth = 51;
             this.dgvCustomer.RowTemplate.Height = 24;
-            this.dgvCustomer.Size = new System.Drawing.Size(1037, 354);
+            this.dgvCustomer.Size = new System.Drawing.Size(1359, 354);
             this.dgvCustomer.TabIndex = 0;
             this.dgvCustomer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomer_CellClick);
             this.dgvCustomer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvCustomer_KeyDown);
@@ -98,7 +98,7 @@
             // lblCustomerID
             // 
             this.lblCustomerID.AutoSize = true;
-            this.lblCustomerID.Location = new System.Drawing.Point(103, 424);
+            this.lblCustomerID.Location = new System.Drawing.Point(270, 424);
             this.lblCustomerID.Name = "lblCustomerID";
             this.lblCustomerID.Size = new System.Drawing.Size(104, 20);
             this.lblCustomerID.TabIndex = 1;
@@ -106,7 +106,7 @@
             // 
             // txtCustomerID
             // 
-            this.txtCustomerID.Location = new System.Drawing.Point(107, 447);
+            this.txtCustomerID.Location = new System.Drawing.Point(274, 447);
             this.txtCustomerID.Name = "txtCustomerID";
             this.txtCustomerID.Size = new System.Drawing.Size(341, 27);
             this.txtCustomerID.TabIndex = 2;
@@ -114,7 +114,7 @@
             // lblCustomerName
             // 
             this.lblCustomerName.AutoSize = true;
-            this.lblCustomerName.Location = new System.Drawing.Point(103, 513);
+            this.lblCustomerName.Location = new System.Drawing.Point(270, 513);
             this.lblCustomerName.Name = "lblCustomerName";
             this.lblCustomerName.Size = new System.Drawing.Size(131, 20);
             this.lblCustomerName.TabIndex = 1;
@@ -122,7 +122,7 @@
             // 
             // txtCustomerName
             // 
-            this.txtCustomerName.Location = new System.Drawing.Point(107, 536);
+            this.txtCustomerName.Location = new System.Drawing.Point(275, 536);
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.Size = new System.Drawing.Size(341, 27);
             this.txtCustomerName.TabIndex = 2;
@@ -130,7 +130,7 @@
             // lblPhoneNumber
             // 
             this.lblPhoneNumber.AutoSize = true;
-            this.lblPhoneNumber.Location = new System.Drawing.Point(618, 424);
+            this.lblPhoneNumber.Location = new System.Drawing.Point(788, 424);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
             this.lblPhoneNumber.Size = new System.Drawing.Size(115, 20);
             this.lblPhoneNumber.TabIndex = 1;
@@ -138,7 +138,7 @@
             // 
             // txtPhoneNumber
             // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(622, 447);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(792, 447);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(341, 27);
             this.txtPhoneNumber.TabIndex = 2;
@@ -146,7 +146,7 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(618, 511);
+            this.lblAddress.Location = new System.Drawing.Point(788, 513);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(71, 20);
             this.lblAddress.TabIndex = 1;
@@ -154,14 +154,14 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(622, 536);
+            this.txtAddress.Location = new System.Drawing.Point(792, 536);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(341, 27);
             this.txtAddress.TabIndex = 2;
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(340, 590);
+            this.btnInsert.Location = new System.Drawing.Point(487, 590);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(79, 31);
             this.btnInsert.TabIndex = 3;
@@ -171,7 +171,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(641, 590);
+            this.btnClear.Location = new System.Drawing.Point(849, 590);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(79, 31);
             this.btnClear.TabIndex = 3;
@@ -181,7 +181,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(491, 590);
+            this.btnUpdate.Location = new System.Drawing.Point(665, 590);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(79, 31);
             this.btnUpdate.TabIndex = 3;
@@ -193,12 +193,12 @@
             // 
             this.txtSearch.Location = new System.Drawing.Point(17, 12);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(902, 27);
+            this.txtSearch.Size = new System.Drawing.Size(1242, 27);
             this.txtSearch.TabIndex = 4;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(943, 12);
+            this.btnSearch.Location = new System.Drawing.Point(1265, 12);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(111, 27);
             this.btnSearch.TabIndex = 5;
@@ -210,7 +210,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1066, 680);
+            this.ClientSize = new System.Drawing.Size(1388, 680);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnUpdate);
