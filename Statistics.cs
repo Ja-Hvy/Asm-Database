@@ -85,5 +85,41 @@ namespace Database
             cmd.ExecuteNonQuery();
             FillData();
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtSearch.Text))
+            {
+                return;
+            }
+            else
+            {
+                string query = @"
+                        SELECT
+                                PurchaseDetails.PurchaseCode,
+                                CUSTOMER.CustomerName,
+                                Product.ProductName,
+                                Employee.EmployeeName,
+                                PurchaseDetails.Quantity,
+                                PurchaseDetails.Quantity * Product.SellingPrice AS TotalPrice
+                            FROM
+                                PurchaseDetails
+                            JOIN 
+                                Purchase ON Purchase.PurchaseCode = PurchaseDetails.PurchaseCode
+                            JOIN
+                                CUSTOMER ON CUSTOMER.CustomerCode = Purchase.CustomerCode
+                            JOIN
+                                Product ON Product.ProductCode = PurchaseDetails.ProductCode
+                            JOIN
+                                Employee ON Employee.EmployeeCode = PurchaseDetails.EmployeeCode
+                            WHERE 
+                                Product.ProductName LIKE @name";
+                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@name", "%"+txtSearch.Text+"%");
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                dgvAllBill.DataSource = table;
+            }
+        }
     }
 }

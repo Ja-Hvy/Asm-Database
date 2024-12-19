@@ -42,7 +42,7 @@ namespace Database
                 string Access = reader["Position"].ToString();
                 user = new UserofEmployee(Id, Name, Username, Access);
 
-                frmDashBoard dashboard = new frmDashBoard(user);
+                frmDashboard dashboard = new frmDashboard(user);
                 dashboard.ShowDialog();
                 this.Close();
 

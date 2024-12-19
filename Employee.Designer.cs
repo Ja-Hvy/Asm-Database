@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
-            this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmployeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Authority = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtEmployeeID = new System.Windows.Forms.TextBox();
@@ -52,6 +46,12 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.cboAuthority = new System.Windows.Forms.ComboBox();
+            this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmployeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Authority = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,48 +74,6 @@
             this.dgvEmployee.TabIndex = 0;
             this.dgvEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellClick);
             this.dgvEmployee.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvEmployee_KeyDown);
-            // 
-            // EmployeeID
-            // 
-            this.EmployeeID.DataPropertyName = "EmployeeCode";
-            this.EmployeeID.HeaderText = "Employee ID";
-            this.EmployeeID.MinimumWidth = 6;
-            this.EmployeeID.Name = "EmployeeID";
-            // 
-            // EmployeeName
-            // 
-            this.EmployeeName.DataPropertyName = "EmployeeName";
-            this.EmployeeName.HeaderText = "Employee Name";
-            this.EmployeeName.MinimumWidth = 6;
-            this.EmployeeName.Name = "EmployeeName";
-            // 
-            // Position
-            // 
-            this.Position.DataPropertyName = "Position";
-            this.Position.HeaderText = "Position";
-            this.Position.MinimumWidth = 6;
-            this.Position.Name = "Position";
-            // 
-            // Authority
-            // 
-            this.Authority.DataPropertyName = "Authority";
-            this.Authority.HeaderText = "Authority";
-            this.Authority.MinimumWidth = 6;
-            this.Authority.Name = "Authority";
-            // 
-            // UserName
-            // 
-            this.UserName.DataPropertyName = "Username";
-            this.UserName.HeaderText = "User Name";
-            this.UserName.MinimumWidth = 6;
-            this.UserName.Name = "UserName";
-            // 
-            // Password
-            // 
-            this.Password.DataPropertyName = "Password";
-            this.Password.HeaderText = "Password";
-            this.Password.MinimumWidth = 6;
-            this.Password.Name = "Password";
             // 
             // txtSearch
             // 
@@ -267,6 +225,49 @@
             this.cboAuthority.Size = new System.Drawing.Size(341, 28);
             this.cboAuthority.TabIndex = 7;
             // 
+            // EmployeeID
+            // 
+            this.EmployeeID.DataPropertyName = "EmployeeCode";
+            this.EmployeeID.HeaderText = "Employee ID";
+            this.EmployeeID.MinimumWidth = 6;
+            this.EmployeeID.Name = "EmployeeID";
+            // 
+            // EmployeeName
+            // 
+            this.EmployeeName.DataPropertyName = "EmployeeName";
+            this.EmployeeName.HeaderText = "Employee Name";
+            this.EmployeeName.MinimumWidth = 6;
+            this.EmployeeName.Name = "EmployeeName";
+            // 
+            // Position
+            // 
+            this.Position.DataPropertyName = "Position";
+            this.Position.HeaderText = "Position";
+            this.Position.MinimumWidth = 6;
+            this.Position.Name = "Position";
+            // 
+            // Authority
+            // 
+            this.Authority.DataPropertyName = "Authority";
+            this.Authority.HeaderText = "Authority";
+            this.Authority.MinimumWidth = 6;
+            this.Authority.Name = "Authority";
+            // 
+            // UserName
+            // 
+            this.UserName.DataPropertyName = "Username";
+            this.UserName.HeaderText = "User Name";
+            this.UserName.MinimumWidth = 6;
+            this.UserName.Name = "UserName";
+            // 
+            // Password
+            // 
+            this.Password.DataPropertyName = "Password";
+            this.Password.HeaderText = "Password";
+            this.Password.MinimumWidth = 6;
+            this.Password.Name = "Password";
+            this.Password.Visible = false;
+            // 
             // frmEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -321,12 +322,12 @@
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.ComboBox cboAuthority;
         private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeID;
         private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Position;
         private System.Windows.Forms.DataGridViewTextBoxColumn Authority;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Password;
-        private System.Windows.Forms.ComboBox cboAuthority;
     }
 }

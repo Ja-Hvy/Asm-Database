@@ -1,6 +1,6 @@
 ﻿namespace Database
 {
-    partial class frmDashBoard
+    partial class frmDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -58,7 +58,7 @@
             this.btnShowBill.Name = "btnShowBill";
             this.btnShowBill.Size = new System.Drawing.Size(162, 56);
             this.btnShowBill.TabIndex = 1;
-            this.btnShowBill.Text = "Show Bill";
+            this.btnShowBill.Text = "Statistics";
             this.btnShowBill.UseVisualStyleBackColor = false;
             this.btnShowBill.Click += new System.EventHandler(this.btnShowBill_Click);
             // 
@@ -106,7 +106,7 @@
             this.pnlDesktop.Size = new System.Drawing.Size(1388, 670);
             this.pnlDesktop.TabIndex = 1;
             // 
-            // frmDashBoard
+            // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -115,9 +115,9 @@
             this.Controls.Add(this.pnlMenu);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "frmDashBoard";
+            this.Name = "frmDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DashBoard";
+            this.Text = "Dashboard";
             this.pnlMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 

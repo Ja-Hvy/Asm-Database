@@ -15,3 +15,4 @@ C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.f
 C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmBill.resources
 C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmBillProduct.resources
 C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmShowBill.resources
+C:\Users\win\Documents\Visual Studio 2022\Database\Database\obj\Debug\Database.frmChangePassword.resources

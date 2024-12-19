@@ -72,6 +72,8 @@
             this.dgvBill.RowTemplate.Height = 24;
             this.dgvBill.Size = new System.Drawing.Size(1364, 318);
             this.dgvBill.TabIndex = 0;
+            this.dgvBill.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBill_CellClick);
+            this.dgvBill.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvBill_KeyDown);
             // 
             // ProductID
             // 
@@ -275,6 +277,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBill";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bill";
             this.Load += new System.EventHandler(this.Bill_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBill)).EndInit();

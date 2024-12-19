@@ -123,6 +123,7 @@ namespace Database
             {
                 MessageBox.Show("Fail", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            connection.Close();
 
         }
 
@@ -155,6 +156,43 @@ namespace Database
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtTotalAmount.Text = string.Empty;
+        }
+
+        private void dgvBill_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (dgvBill.SelectedRows.Count == 0)
+            {
+                return;
+            }
+            if (e.KeyCode == Keys.Delete)
+            {
+                int id = Convert.ToInt32(dgvBill.CurrentRow.Cells["ProductID"].Value.ToString());
+                AddProduct removeProduct = addProducts.Find(p => p.ProductID == id);
+                if (removeProduct != null)
+                {
+                    addProducts.Remove(removeProduct);
+                }
+            }
+            DataTable dataTable = new DataTable();
+
+            dataTable.Columns.Add("ProductCode");
+            dataTable.Columns.Add("ProductName");
+            dataTable.Columns.Add("InventoryQuantity");
+            dataTable.Columns.Add("SellingPrice");
+            dataTable.Columns.Add("TotalAmount");
+            foreach (var product in addProducts)
+            {
+                if (product != null)
+                {
+                    dataTable.Rows.Add(product.ProductID, product.ProductName, product.Quantity, product.Price, product.TotalAmount);
+                }
+            }
+            dgvBill.DataSource = dataTable;
+        }
+
+        private void dgvBill_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dgvBill.Rows[e.RowIndex].Selected=true;
         }
     }
 }

@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Database
 {
-    public partial class frmDashBoard : Form
+    public partial class frmDashboard : Form
     {
         private UserofEmployee user;
-        public frmDashBoard(UserofEmployee user)
+        public frmDashboard(UserofEmployee user)
         {
             this.user = user;
             InitializeComponent();
